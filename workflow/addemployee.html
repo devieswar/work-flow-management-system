@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], input[type=password],input[type=email] {
+  border-radius: 25px;
+    border: 2px solid ;
+    padding: 10px;
+    margin: 3px;
+    width: 250px;
+    height: 15px;
+
+}
+a {
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 4px 6px;
+  margin: 3px 0;
+  cursor: pointer;
+  width: 8%;
+   border-radius: 50%;
+    border: 2px solid ;
+    width: 100px;
+    height: 53px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 6px 0;
+}
+img.avatar {
+  width: 15%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 3px;
+}
+
+</style>
+<body  background="http://localhost:8080/img/bc7.jpg">
+<form action="http://localhost:8080/workflow/afteradd_emp.jsp" method="post">
+<div align='center' class="image">
+<img src="http://localhost:8080/img/emp2.png" alt="Avatar" class="avatar">
+<h2>Enter Employee Details </h2>
+<div class="form">
+<label for="name"><b >Employee Name</b></label>
+<input type="text" placeholder="Enter Name" name="name" required>
+<br>
+<br>
+<label for="empid"><b >Employee ID</b></label>
+<input type="text" placeholder="Enter Employee ID" name="empid" required>
+<br>
+<br>
+<label for="address"><b>Address</b></label>
+<input type="text" placeholder="Enter Address" name="address" required>
+<br>
+<br>
+<label for="designation"><b> Designation</b></label>
+<input type="text" placeholder="Enter Designation" name="designation" required>
+<br>
+<br>
+<label for="emailid"><b >Email Id</b></label>
+<input type="email" placeholder="Enter Email Id" name="emailid" required>
+<br>
+<br>
+<label for="username"><b >User Name</b></label>
+<input type="text" placeholder="Enter User Name" name="username" required>
+<br>
+<br>
+<label for="password"><b >Password</b></label>
+<input type="password" placeholder="Enter Password" name="password" required>
+<br>
+<br>
+<button type="submit">Add</button>
+<button type="reset" >Cancel</button>
+</div>
+
+</form>
+</div>
+</body>
+</html>

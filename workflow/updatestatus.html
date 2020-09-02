@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text],input[type=number]{
+  border-radius: 25px;
+    border: 2px solid ;
+    padding: 10px;
+    margin: 3px;
+    width: 250px;
+    height: 15px;
+
+}
+textarea  {
+  border-radius: 25px;
+    border: 2px solid ;
+    padding: 10px;
+    margin: 3px;
+    width: 250px;
+    height: 125px;
+
+}
+a {
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 4px 6px;
+  margin: 3px 0;
+  cursor: pointer;
+  width: 8%;
+   border-radius: 50%;
+    border: 2px solid ;
+    width: 100px;
+    height: 53px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 6px 0;
+}
+img.avatar {
+  width: 15%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 3px;
+}
+
+</style>
+<body  background="http://localhost:8080/img/bc7.jpg">
+<form action="http://localhost:8080/workflow/after_updatestatus.jsp" method="post">
+<div align='center' class="image">
+<img src="http://localhost:8080/img/emp2.png" alt="Avatar" class="avatar">
+<h2>Assign Project and Task To Employee </h2>
+<div class="form">
+<label for="empid"><b >Employee ID</b></label>
+<input type="text" placeholder="Enter Employee Id" name="empid" required>
+<br>
+<br>
+<label for="projectstatus"><b >Project Status(%)</b></label>
+<input type="number" placeholder="Enter Project Status" name="projectstatus" min="0" max="100" step="10" value="0" required>
+<br>
+<br>
+
+<button type="submit"class="registerbtn">Update</button>
+<button type="reset" class="registerbtn">Cancel</button>
+</div>
+</form>
+</div>
+</body>
+</html>

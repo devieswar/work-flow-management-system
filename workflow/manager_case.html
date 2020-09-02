@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 18%;
+  border-radius: 25px;
+    border: 2px solid ;
+    padding: 10px;
+    margin: 3px;
+    width: 250px;
+    height: 70px;
+}
+
+button:hover {
+
+  opacity: 0.8;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 6px 0;
+}
+img.avatar {
+  width: 15%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 3px;
+}
+
+
+</style>
+</head>
+<body  background="http://localhost:8080/img/bc7.jpg">
+
+<h2 align='center'>Welcome Manager</h2>
+  <div class="container" align='center'>
+<img src="http://localhost:8080/img/emp2.png" alt="Avatar" class="avatar">
+<br>
+<br>
+<form action="http://localhost:8080/workflow/addemployee.html" method="post">
+  <button type="submit">Add Employee</button></form>
+    <form action="http://localhost:8080/workflow/addprojects.html" method="post">
+    <button type="submit">Add Projects</button></form>
+    <form action="http://localhost:8080/workflow/viewstatus.html" method="post">
+    <button type="submit">View Project Status</button></form>
+    <form action="/action_page.php" method="post">
+        <button type="submit">Update Employee Details</button></form>
+    <form action="/action_page.php" method="post">
+    <button type="submit">Update Project Details</button></form>
+    <form action="http://localhost:8080/workflow/home.html" method="post">
+    <button type="submit">Log Out</button></form>
+ <br>
+<br>
+  </div>
+
+</form>
+
+</body>
+</html>

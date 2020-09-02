@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], input[type=password] {
+  border-radius: 25px;
+    border: 2px solid ;
+    padding: 10px;
+    margin: 3px;
+    width: 250px;
+    height: 15px;
+
+}
+a {
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 4px 6px;
+  margin: 3px 0;
+  cursor: pointer;
+  width: 8%;
+   border-radius: 50%;
+    border: 2px solid ;
+    width: 100px;
+    height: 53px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 4px 6px;
+  background-color: #d97feb;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 6px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 4px;
+}
+
+
+
+}
+</style>
+</head>
+<body  background="http://localhost:8080/img/bc7.jpg">
+
+<h2 align='center'>Manager Login</h2>
+
+<form action="http://localhost:8080/workflow/manager_case.html" method="post">
+  <div class="imgcontainer">
+    <img src="http://localhost:8080/img/manager.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" align='center'>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+    <br>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+     <br>
+    <button type="submit">Login</button>
+    <button type="reset">Cancel</button>
+ <br>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+     <a href="#">Forgot password?</a>
+<br>
+  </div>
+
+</form>
+
+</body>
+</html>
